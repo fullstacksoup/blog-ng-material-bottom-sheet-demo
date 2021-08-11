@@ -1,0 +1,33 @@
+<div class="sidenav-content fixed-toolbar">
+
+  <mat-toolbar color="primary">
+  <mat-toolbar-row >
+
+    <span class="toolbar-spacer"></span>
+    <span class="mr-5"></span>
+    <span class="mr-5"></span>
+    <span class="mr-5"></span>
+    <span class="mr-5"></span>
+
+    <button mat-fab color="info" [routerLink]="['/home']">
+      <mat-icon>home</mat-icon>
+    </button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</div>
+
+
+<mat-sidenav-container class="sidenav-container">
+ 
+  <mat-sidenav-content >
+    <!-- <div style="height: 36px; background-color: #29abe3; padding: 5px 2px 1px 2px; ">
+      <div class="container" style="text-align: center">
+      </div>
+    </div> -->
+
+      <router-outlet #o="outlet"></router-outlet>
+
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
